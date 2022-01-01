@@ -85,6 +85,7 @@ font-family: 'Barlow Condensed', sans-serif;
  }
  .main{
      display: flex;
+     min-height: 70vh;
  }
  .min-main{
      color:#fff;
@@ -93,5 +94,5 @@ font-family: 'Barlow Condensed', sans-serif;
      justify-content: center;
      align-items: center;
      text-align: center;
-     min-height: 70vh; 
+    
  }

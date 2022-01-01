@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&display=swap');
+/* 
+font-family: 'Barlow Condensed', sans-serif;
+ */
+
+ /* Universal Style */
+
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ body{
+    font-family: 'Barlow Condensed', sans-serif;
+
+ }
+ a{
+     text-decoration: none;
+     
+ }
+ li{
+     list-style: none;
+ }
+ p{
+     margin: 0.75rem 0;
+ }
+ /* Utilities */
+
+ /* buttoms */
+ /* end buttoms */
+
+ /* text */
+ .text-primary{
+     color: #93cb52;
+ }
+ /* end text */
+
+ /* backgrounds */
+ /* end background */
+
+ /* padding */
+ /* end padding */
+
+ /* margin */
+ /* end margins */
+
+ /* navbar section */
+ .navbar{
+     background: url('../img/main.jpg')no-repeat center center/cover;
+     min-height: 100vh;
+     position: sticky;
+     top: 0;
+     display: flex;
+     justify-content: space-between;
+     color:#fff;
+     z-index: 1;
+     padding: 1rem;
+     
+ }
+
+ .navbar ul{
+     display: flex;
+     padding: 0.75rem;
+    
+ }
+
+ .navbar ul li a{
+     color:#fff;
+     font-size: 1.2rem;
+     padding: 0.75rem;
+    margin: 0 0.25rem;
+
+ }
+ /* end navbar */

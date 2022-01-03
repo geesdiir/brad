@@ -11,10 +11,9 @@ font-family: 'Barlow Condensed', sans-serif;
      box-sizing: border-box;
  }
  body{
-    font-family: 'Barlow Condensed', sans-serif;
     background: url('../img/main.jpg')no-repeat center center/cover;
-     min-height: 100vh;
-
+    min-height: 100vh;
+    font-family: 'Barlow Condensed', sans-serif;
  }
  a{
      text-decoration: none;
@@ -22,29 +21,90 @@ font-family: 'Barlow Condensed', sans-serif;
  }
  li{
      list-style: none;
+     color:#fff;
  }
  p{
      margin: 0.75rem 0;
  }
+
  /* Utilities */
 
+ .container{
+     max-width: 1100px;
+     margin: auto;
+     padding: 0 2rem;
+     overflow: hidden;
+ }
+ 
+
  /* buttoms */
+ .btn-dark{
+     background: #333;
+     color: #fff;
+ }
+ .btn-light{
+     background: #fff;
+     color:#333;
+ }
+ .btn-primary{
+     background: #487EB0;
+     color:#6AB04A
+ }
  /* end buttoms */
 
  /* text */
- .text-primary{
-     color: #93cb52;
- }
+ .text-primary{color: #93cb52;}
+ .text-danger{color:#E71C23;}
+ .text-primary{color:#487EB0;}
+ .text-info{color:#6AB04A}
+ .text-center{text-align: center;}
+ .text-light{color:#DAE0E2}
+
  /* end text */
 
+ /* paragaraph */
+ .f-big{
+     font-size: 4rem;
+     margin-bottom: 0.75rem;
+     line-height: 1.1;
+ }
+ .f-normal{
+     font-size: 2rem;
+     margin-bottom: 0.75rem;
+     line-height: 1.1;
+ }
+ .f-small{
+     font-size: 1rem;
+     margin-bottom: 0.75rem;
+     line-height: 1.1;
+ }
+
  /* backgrounds */
+ .bg-light{background: #fff; color: #333;}
+ .bg-primary{background: #93cb52;}
+ .bg-dark{background: #333; color: #fff;}
+ .bg-mix{background: #DAE0E2;}
  /* end background */
 
  /* padding */
+ .py-1{padding: 1.5rem 0;}
+ .py-2{padding: 2rem 0;}
+ .py-3{padding: 3rem 0;}
+ .p-1{padding: 1.5rem;}
+ .p-2{padding: 2rem;}
+ .p-3{padding: 3rem;}
  /* end padding */
 
  /* margin */
  /* end margins */
+
+ .list{
+     margin: 0.5rem 0;
+ }
+ .list li{
+     padding: 0.5rem 0;
+     border-bottom: 1px dotted #93cb52;
+ }
 
  /* navbar section */
  .navbar{
@@ -56,6 +116,7 @@ font-family: 'Barlow Condensed', sans-serif;
      color:#fff;
      z-index: 1;
      padding: 1rem;
+     margin: 0rem 5rem;
      
  }
 
@@ -78,14 +139,19 @@ font-family: 'Barlow Condensed', sans-serif;
 
  .btn-cv{
      background: #DFAF2B;
-     color:#333;
+     color:rgb(7, 0, 0);
      padding: 0.5rem 1rem;
      font-size: 1rem;
+     border-radius: 5px;
 
  }
+ .btn-cv:hover{
+     background: #7ab436;
+ }
  .main{
-     display: flex;
-     min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    
  }
  .min-main{
      color:#fff;
@@ -94,5 +160,48 @@ font-family: 'Barlow Condensed', sans-serif;
      justify-content: center;
      align-items: center;
      text-align: center;
+     height: 100vh;
+     padding: 0 2rem;
+     /* overlay */
+     /* position: absolute;
+     top:60px;
+     left: 0;
+     right: 0;
+     background-color: rgba(0,0,0, 0.4); */
+     
     
  }
+
+ /* Testimonail section */
+ .testmonial .items{
+     display: flex;
+     padding: 1rem;
+ }
+ .testmonial .items .item{
+     flex: 1;
+     text-align: center;
+     padding: 1rem;
+     background: #E71C23;
+     margin: 0 0.1rem;
+     border-radius: 5px;
+     min-height: 25vh;
+ }
+ .testmonial .items .item i {
+     margin-bottom: 1rem;
+     
+ }
+
+
+
+ /* Our team section */
+ #contact{
+     display: flex;
+
+ }
+ .contact div{
+     flex: 1;
+ }
+ .contact .contact-image{
+     background: url('../img/team.jpg') no-repeat center center/cover;
+ }
+ 
